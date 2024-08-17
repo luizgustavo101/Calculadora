@@ -1,0 +1,108 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+  background: #015260;
+  height: 100vh;
+  position: relative;
+}
+
+#container {
+  display: inline-grid;
+  grid-template-columns: repeat(4, 70px);
+  background: #d1d1d1;
+  gap: 10px;
+  padding: 13px;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#resultado {
+  grid-column: span 4;
+  height: 70px;
+  font-size: 40px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  overflow: hidden;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  background-color: #404040;
+}
+
+#limpar {
+  color: red;
+}
+
+#juros {
+  grid-column: span 4;
+  display: none;
+}
+
+#juros .input {
+  border: 0;
+  outline: 0;
+  padding: 3px;
+  width: 98%;
+  font-size: 1.01em;
+  background: #353535;
+  color: white;
+  border-bottom: solid 1px white;
+  margin: 0px 0px 5px 0px;
+  padding: 5px;
+}
+#juros .input::placeholder {
+  color: #ffffff88;
+}
+
+#js {
+  grid-column: span 2;
+}
+#ks {
+  font-size: 23px;
+}
+.btn {
+  height: 70px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 40px;
+  background: #404040;
+  transition: 0.03s;
+  box-shadow: 4px 4px 2px #54545476;
+}
+
+#limpar:active {
+  transform: scale(0.95);
+  background: #ff000076;
+  transition: 0.1;
+}
+button:hover {
+  background: #525252;
+  ;
+  transition: 0.1;
+}
+
+button:active {
+  transform: scale(0.95);
+  background: #777777;
+  transition: 0.1;
+}
+
+#calcular,
+#multiplicar,
+#dividir,
+#somar,
+#subtrair {
+  color: #30ddff;
+}
+
