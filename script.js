@@ -7,7 +7,6 @@ function btn(n) {
   resultado.textContent += n;
 }
 
-
 function limpar(j) {
   resultado.textContent = j;
   limparjuros();
