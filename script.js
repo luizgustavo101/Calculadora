@@ -69,7 +69,7 @@ function calcular() {
       .replace(/%/g, "/100*")
       .replace(/\^/g, "**")
       .replace(/,/g, ".");
-    resultado.textContent = eval(expressao);
+    resultado.textContent = eval(expressao).toFixed(5);
     parentesE = false;
   }
 }
